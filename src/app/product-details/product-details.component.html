@@ -7,3 +7,35 @@
 
   <button (click)="addToCart(product)">Buy</button>
 </div>
+
+<div *ngIf="phone">
+  <h3>{{ phone.name }}</h3>
+  <h4>{{ phone.price | currency }}</h4>
+  <p>{{ phone.description }}</p>
+
+  <button (click)="addToCart(phone)">Buy</button>
+</div>
+
+<div *ngIf="laptop">
+  <h3>{{ laptop.name }}</h3>
+  <h4>{{ laptop.price | currency }}</h4>
+  <p>{{ laptop.description }}</p>
+
+  <button (click)="addToCart(laptop)">Buy</button>
+</div>
+
+<div *ngIf="microWave">
+  <h3>{{ microWave.name }}</h3>
+  <h4>{{ microWave.price | currency }}</h4>
+  <p>{{ microWave.description }}</p>
+
+  <button (click)="addToCart(microWave)">Buy</button>
+</div>
+
+<div *ngIf="tv">
+  <h3>{{ tv.name }}</h3>
+  <h4>{{ tv.price | currency }}</h4>
+  <p>{{ tv.description }}</p>
+
+  <button (click)="addToCart(tv)">Buy</button>
+</div>

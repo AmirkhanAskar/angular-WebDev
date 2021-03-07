@@ -22,8 +22,12 @@ import { AppListComponent } from './app-list/app-list.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: "", component: AppListComponent },
-      { path: "", component: ProductListComponent },
+      { path: "categories/:categoryId", component: ProductListComponent },
       { path: "products/:productId", component: ProductDetailsComponent },
+      { path: "laptops/:laptopId", component: ProductDetailsComponent },
+      { path: "phones/:phoneId", component: ProductDetailsComponent },
+      { path: "tvs/:tvId", component: ProductDetailsComponent },
+      { path: "microWaves/:microWaveId", component: ProductDetailsComponent },
       { path: "cart", component: CartComponent },
       { path: "shipping", component: ShippingComponent }
     ])

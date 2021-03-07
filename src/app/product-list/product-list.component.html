@@ -1,13 +1,57 @@
 <h2>Products</h2>
 
-<div *ngFor="let product of products">
+<div *ngIf = "laptopscnt">
+  <div *ngFor="let laptop of laptops">
 
-  <h3>
-    <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
-      {{ product.name }}
-    </a>
-  </h3>
+    <h3>
+      <a [title]="laptop.name + ' details'" [routerLink]="['/laptops', laptop.id]">
+        {{ laptop.name }}
+      </a>
+    </h3>
 
-<!-- . . . -->
+  <!-- . . . -->
 
+  </div>
+</div>
+
+<div *ngIf = "tvscnt">
+  <div *ngFor="let tv of tvs">
+
+    <h3>
+      <a [title]="tv.name + ' details'" [routerLink]="['/tvs', tv.id]">
+        {{ tv.name }}
+      </a>
+    </h3>
+
+  <!-- . . . -->
+
+  </div>
+</div>
+
+<div *ngIf = "phonescnt">
+  <div *ngFor="let phone of phones">
+
+    <h3>
+      <a [title]="phone.name + ' details'" [routerLink]="['/phones', phone.id]">
+        {{ phone.name }}
+      </a>
+    </h3>
+
+  <!-- . . . -->
+
+  </div>
+</div>
+
+<div *ngIf = "microWavescnt">
+  <div *ngFor="let microWave of microWaves">
+
+    <h3>
+      <a [title]="microWave.name + ' details'" [routerLink]="['/microWaves', microWave.id]">
+        {{ microWave.name }}
+      </a>
+    </h3>
+
+  <!-- . . . -->
+
+  </div>
 </div>
